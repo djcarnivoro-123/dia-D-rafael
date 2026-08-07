@@ -1,7 +1,9 @@
 h1{
     text-align: center;
 }
-
+h3{
+	text-align:center;
+}
 .container1{
     width: 80%;
     background-color: white;
@@ -14,23 +16,25 @@ h1{
     margin:10%;
     grid-template-columns: repeat(3, 3fr);
 }
-#container2{
+.container{
     background-color: white;
     border: solid 1px;
     border-radius: 1%;
-    display: grid;
+    display: flex;
     min-height: 600px;
     justify-content: center;
     text-align: center;
     width: 80%;
     margin:auto;
-    grid-template-columns: repeat(3, 3fr);
+	flex-direction:column;
     
 }
 body{
     font-family: Arial;
     background-color:gray;
 }
+
+
 #img{
     grid-column: 1;
 }
@@ -43,16 +47,26 @@ body{
     grid-column: span 2;
     padding: 0 1% 0 1%;
 }
+
+
 #jogos{
-    /*grid-row: 3;
-    grid-column: span 3;*/
-    grid-area: jogos;
-    border: solid;
+    flex-grow:0;
 }
+.contjogo{
+	display:grid;
+	grid-template-columns:repeat(2, 1fr);
+	grid-template-rows:repeat(3,1fr);
+}
+
+
+
 #livros{
     grid-area: a;
     padding: 0 1% 0 1%;
 }
+
+
+
 #proj{
     grid-column: span 3;
     padding: 0 1% 0 1%;
