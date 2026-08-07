@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+}
+
+.container1{
+    width: 80%;
+    background-color: white;
+    border: solid 1px;
+    text-align: center;
+    border-radius: 1%;
+    display: grid;
+    min-height: 400px;
+    justify-content: center;
+    margin:10%;
+    grid-template-columns: repeat(3, 3fr);
+}
+#container2{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 1%;
+    display: grid;
+    min-height: 600px;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin:auto;
+    grid-template-columns: repeat(3, 3fr);
+    
+}
+body{
+    font-family: Arial;
+    background-color:gray;
+}
+#img{
+    grid-column: 1;
+}
+#img img{
+    width:75%;
+    padding: 10%;
+}
+#inicio{
+    grid-column: 2;
+    grid-column: span 2;
+    padding: 0 1% 0 1%;
+}
+#jogos{
+    /*grid-row: 3;
+    grid-column: span 3;*/
+    grid-area: jogos;
+    border: solid;
+}
+#livros{
+    grid-area: a;
+    padding: 0 1% 0 1%;
+}
+#proj{
+    grid-column: span 3;
+    padding: 0 1% 0 1%;
+}
+/*
+            <div>
+                <h3 id="proj">Outros Projetos</h3>
+            </div>
+            <div>
+               
+            </div>*/

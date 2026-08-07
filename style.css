@@ -1,0 +1,14 @@
+.container{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 1%;
+    display: flex;
+    min-height: 600px;
+    justify-content: center;
+    width: 80%;
+    margin:auto;
+}
+body{
+    font-family: Arial;
+    background-color: grey;
+}
