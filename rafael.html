@@ -1,68 +1,81 @@
 <head>
     <meta charset="UFT-8">
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body>
     <header>
         <nav id="menu">
-            <div class="estiloMenu"></div>
+            <div></div>
             <a href="index.php" class="estiloMenu">Página Inicial</a>
             <a href="#sobre.html" class="estiloMenu">Sobre Nós</a>
             <a href="#julia.html" class="estiloMenu">Julia</a>
-            <a href="rafael.php" class="estiloMenu">Rafael</a>
+            <a href="rafael.html" class="estiloMenu">Rafael</a>
+            <a href="#kayllan.html" class="estiloMenu">Kayllan</a>
         </nav>
     </header>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br>
 </body>
 
 
 <html>
     <head>
+        <meta charset="UFT-8">
         <link rel="stylesheet" href="stylerafa.css">
-         <style>
-        #menu{
-            width: 100%;
-            background-color:#49D6B5;
-            position: fixed;
-            top:0;
-            display:flex;
-            justify-content:space-around;
-            text-align:center;
-            padding: 0.5%;
-            margin:auto;
-        }
-        .estiloMenu{
-            padding:1%;
-            margin:1%;
-            position: relative;
-            size:1%;
-            gap:1%;
-            color:black;
-            text-decoration:none;
-            font-family:Arial;
-            
-            border-radius:10%;
-        }
-        .estiloMenu:hover{
-            background-color:#599688;
-            color:white;
-            size:2%;
-        }
-        /*@media(min-width:400px, max-width:600px) {
+        <link rel="stylesheet" href="animations.css">
+        <style>
             #menu{
-            width: 100%;
-            padding: 0.5%;
-            background-color:#49D6B5;
-            position: fixed;
-            gap:1%;
-            display:flex;
-            justify-content:space-around;
-            text-align:center;
-            margin:auto;
+                width: 100%;
+                background-color:#49D6B5;
+                position: fixed;
+                top:0;
+                display:flex;
+                justify-content:space-around;
+                text-align:center;
+                padding: 0.5%;
+                margin:auto;
+                opacity: 0;
+                transition: opacity 1s;
+                transition-delay: 2s;
+                z-index: 50;
             }
-        }*/
-    </style>
+            #menu:hover{
+                opacity: 1;
+                transition-delay: 0s;
+            }    
+            .estiloMenu{
+                padding:1%;
+                margin:1%;
+                position: relative;
+                size:1%;
+                gap:1%;
+                color:black;
+                text-decoration:none;
+                font-family:Arial;
+                
+                border-radius:10%;
+            }
+            .estiloMenu:hover{
+                background-color:#599688;
+                color:white;
+                size:2%;
+            }
+            /*@media(min-width:400px, max-width:600px) {
+                #menu{
+                width: 100%;
+                padding: 0.5%;
+                background-color:#49D6B5;
+                position: fixed;
+                gap:1%;
+                display:flex;
+                justify-content:space-around;
+                text-align:center;
+                margin:auto;
+                }
+            }*/
+        </style>
     </head>
     <body>
+        <script src="scripts.js"></script>
         <h1>Rafael</h1>
         <div class="container1">
             
@@ -82,37 +95,59 @@
             </div>
 
         </div>
-<h3>Jogos</h3>
+        <h3>Jogos</h3>
         <div class="container">
             <div id="jogos">
                 <p>Aqui você verá meus jogos que eu já fiz, estou fazendo ou pretendo fazer</p>
             </div>
-			
-			<div class="contjogo">
-				<div><img src=""></div>
-				<div>
-					<h4>Last Hope</h4>
-					<p>O jogo segue a história de Gabriela, uma garota que deseja trazer paz ao reino após um cavaleiro sombrio retornar de seu selo</p>
-				</div>
-				<div>
-					<p>História: Em um lugar muito distante, existia um reino que viva em paz. Um dia, um cavaleiro sombrio surgiu, levando o caos e a destruição para esse reino.
-					Quando a ultima luz de esperança estava prestes a se apagar, cinco heróis surgiram, derrotaram e selaram o cavaleiro, desaparecendo após a batalha</p>
-				</div>
-			</div>
-			
-			<div class="contjogo">	
-				<div><img src=""></div>
-				<div>
-					<h4>Geometry Dodge</h4>
-					<p>Um jogo simples feito no scratch onde seu objetivo é apenas desviar de vários projéteis</p>
-				</div>
-			</div>
-			
-			<div class="contjogo">
-				<div></div>
-				<div></div>
-			</div>
+            
+            <div class="contjogo">
+                <div class="carossel">
+                    <div class="imgcaro">
+                        <img src="imagens/lasthope (1).png" id="imag">
+                        
+                    </div>
+                    <button class="anterior" onclick="anterior()"><</button>
+                    <button class="proximo" onclick="proximo()">></button>
+                </div>
+                <div class="continfo">
+                    <div>
+                        <h4>Last Hope</h4>
+                        <p>O jogo segue a história de Gabriela, uma garota que deseja trazer paz ao reino após um cavaleiro sombrio retornar de seu selo.</p>
+                    </div>
+                    <div>
+                        <p>
+                            <b>História:</b> Em um lugar muito distante, existia um reino que viva em paz. Um dia, um cavaleiro sombrio surgiu, levando o caos e a destruição para esse reino.
+                            Quando a ultima luz de esperança estava prestes a se apagar, cinco heróis surgiram, derrotaram e selaram o cavaleiro, desaparecendo após a batalha.
+                            Com o passar dos anos, o selo se enfraqueceu e o cavaleiro retornou. Sem ninguém para pará-lo, uma garota chamada Gabriela decide enfrentá-lo.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            No momento, esse jogo está apenas no planejamento, porém uma demo já está em fase de produção. Para mais detalhes sobre ela, confiram meu canal do youtube
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contjogo">
+                <div class="continfo">	
+                    <div><img src=""></div>
+                    <div>
+                        <h4>Geometry Dodge</h4>
+                        <p>Um jogo simples feito no scratch onde seu objetivo é apenas desviar de vários projéteis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contjogo">
+                <div class="continfo">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
 		</div>
+
 		<div>
 			<div id="livros">
                 <h3>Livros</h3>
