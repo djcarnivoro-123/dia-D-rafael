@@ -17,9 +17,9 @@ h3{
     grid-template-columns: repeat(3, 3fr);
 }
 .container{
-    background-color: white;
+/*    background-color: white;
     border: solid 1px;
-    border-radius: 1%;
+    border-radius: 1%;*/
     display: flex;
     min-height: 600px;
     justify-content: center;
@@ -51,20 +51,57 @@ body{
 
 #jogos{
     flex-grow:0;
+    background-color: white;
+    margin: 5%;
+    border: solid;
+    border-radius: 1%;
 }
 .contjogo{
-	display:grid;
-	grid-template-columns:repeat(2, 1fr);
-	grid-template-rows:repeat(3,1fr);
+	display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 1%;
+    margin: 5%;
+    padding: 3%;
 }
-
-
+.carossel{
+    padding: 2%;
+    position: relative;
+/*    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}*/
+}
+.imgcaro{
+    display: flex;
+    transition: 0.5s;
+    
+}
+.imgcaro img{
+    width: 80%;
+    padding: 0 10% 1% 10%;
+    object-fit: cover;
+}
 
 #livros{
-    grid-area: a;
-    padding: 0 1% 0 1%;
+    flex-grow:0;
+    background-color: white;
+    margin: 5%;
+    border: solid;
+    border-radius: 1%;
 }
-
+.contlivro{
+	display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 1%;
+    margin: 5%;
+    padding: 3%;
+}
 
 
 #proj{
