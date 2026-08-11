@@ -49,14 +49,14 @@ body{
 }
 
 
-#jogos{
+.titulo{
     flex-grow:0;
     background-color: white;
     margin: 5%;
     border: solid;
     border-radius: 1%;
 }
-.contjogo{
+.cont{
 	display: flex;
     flex-direction: column;
     background-color: white;
@@ -84,23 +84,6 @@ body{
     width: 80%;
     padding: 0 10% 1% 10%;
     object-fit: cover;
-}
-
-#livros{
-    flex-grow:0;
-    background-color: white;
-    margin: 5%;
-    border: solid;
-    border-radius: 1%;
-}
-.contlivro{
-	display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: solid 1px;
-    border-radius: 1%;
-    margin: 5%;
-    padding: 3%;
 }
 
 
