@@ -222,7 +222,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="animations.css">
     </head>
     <body>
@@ -248,6 +248,9 @@
             <section id="julia">
                 <div class="container1">
                     <h3>Julia</h3>
+                    <p>
+                        Meu nome é Júlia Vitória de oliveira Nunes, Nasci em 09/10/2009, estudo no 2°Ano do Ensino Médio
+                    </p>
                 </div>
             </section>
             
@@ -272,6 +275,10 @@
             <section id="kayllan">
                 <div class="container1">
                     <h3>Kayllan</h3>
+                    <p>
+                        Olá, eu sou Kayllan e no momento sou um aluno do segundo ano. Gosto de jogos antigos e histórias de fantasias(Não é atoa que eu estou escrevendo uma, mas não está completa. só tem 3 Capitulos).<br>
+                        Sobre minhas criações, abaixo vocês encontrarão um link para uma página onde estão grande parte delas.
+                    </p>
                 </div>
             </section>
         </section>
