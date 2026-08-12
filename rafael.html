@@ -1,109 +1,237 @@
 <head>
-    <meta charset="UFT-8">
-    <link rel="stylesheet" href="animations.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/animations.css">
+
+    <style>
+
+        /* =========================
+           MENU
+        ========================= */
+
+        #menu {
+            width: 100%;
+            box-sizing: border-box;
+
+            background-color: #49D6B5;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 8px 2%;
+            margin: 0;
+
+            z-index: 50;
+
+            flex-wrap: wrap;
+
+            gap: 5px;
+        }
+
+
+        /* =========================
+           LINKS
+        ========================= */
+
+        .estiloMenu {
+            padding: 10px 15px;
+            margin: 2px;
+
+            color: black;
+            text-decoration: none;
+
+            font-family: Arial, sans-serif;
+
+            border-radius: 8px;
+
+            flex: 1 1 120px;
+
+            transition:
+                background-color 0.3s,
+                color 0.3s,
+                transform 0.2s;
+        }
+
+
+        .estiloMenu:hover {
+            background-color: #599688;
+            color: white;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           BOTÃO
+        ========================= */
+
+        #but {
+            flex-basis: 100%;
+
+            display: flex;
+            justify-content: center;
+        }
+
+
+        #but button {
+            background-color: #599688;
+
+            color: white;
+
+            padding: 5px 18px;
+
+            border: none;
+
+            border-radius: 0 0 15px 15px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: 0.2s;
+        }
+
+
+        #but button:hover {
+            background-color: #40776b;
+        }
+
+
+        /* =========================
+           MENU ESCONDIDO
+        ========================= */
+
+        .baixo {
+            transform: translateY(-70px);
+            transition: transform 1s;
+        }
+
+
+        .normal {
+            transform: translateY(0);
+            transition: transform 0.5s;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            #menu {
+                padding: 6px 3%;
+            }
+
+            .estiloMenu {
+                flex: 1 1 40%;
+                padding: 9px;
+            }
+
+        }
+
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            #menu {
+                padding: 5px;
+                gap: 2px;
+            }
+
+            .estiloMenu {
+                flex: 1 1 45%;
+
+                padding: 10px 5px;
+
+                font-size: 14px;
+            }
+
+            #but button {
+                padding: 5px 20px;
+            }
+
+        }
+
+    </style>
 </head>
 <body>
+
     <header>
+
         <nav id="menu" class="baixo">
+
             <div></div>
-            <a href="index.php" class="estiloMenu">Página Inicial</a>
-            <a href="#sobre.html" class="estiloMenu">Sobre Nós</a>
-            <a href="#julia.html" class="estiloMenu">Julia</a>
-            <a href="rafael.html" class="estiloMenu">Rafael</a>
-            <a href="#kayllan.html" class="estiloMenu">Kayllan</a>
-            <div id="but" onclick="desce()"><button>V</button></div>
+
+            <a href="index.html" class="estiloMenu link">
+                Página Inicial
+            </a>
+
+            <a href="index.html#sobre" class="estiloMenu link">
+                Sobre Nós
+            </a>
+
+            <a href="index.html#julia" class="estiloMenu link">
+                Julia
+            </a>
+
+            <a href="index.html#rafael" class="estiloMenu link">
+                Rafael
+            </a>
+
+            <a href="index.html#kayllan" class="estiloMenu link">
+                Kayllan
+            </a>
+
+            <div id="but" onclick="desce()">
+                <button>V</button>
+            </div>
+
         </nav>
+
     </header>
-    <br><br><br><br><br>
+    
     <script>
         function desce(){
+
             const menu = document.getElementById("menu");
+        
             menu.style.transitionDelay = "0s";
+        
             menu.classList.remove("baixo");
             menu.classList.add("normal");
-            
-            setInterval(()=>{
+        
+            setTimeout(() => {
+        
                 menu.classList.remove("normal");
                 menu.classList.add("baixo");
+        
             }, 5000);
+        
         }
     </script>
 </body>
 
-
 <html>
     <head>
         <meta charset="UFT-8">
-        <link rel="stylesheet" href="styles/stylerafa.css">
-        <link rel="stylesheet" href="animations.css">
-        <style>
-            #menu{
-                width: 100%;
-                background-color:#49D6B5;
-                position: fixed;
-                top:0;
-                display:flex;
-                justify-content:space-around;
-                text-align:center;
-                padding: 0.5%;
-                margin:auto;
-                transition-delay: 2s;
-                z-index: 50;
-                flex-wrap: wrap;
-            }
-            #but{
-                flex-basis: 100%;
-            }
-            #but button{
-                background-color: #599688;
-                padding: 0.5%;
-                border-radius: 0 0 100% 100%;
-                width: 4%;
-                border: #599688;
-            }
-            .estiloMenu{
-                padding:1%;
-                margin:1%;
-                position: relative;
-                size:1%;
-                gap:1%;
-                color:black;
-                text-decoration:none;
-                font-family:Arial;
-                border-radius:5%;
-                flex:1;
-            }
-            .estiloMenu:hover{
-                background-color:#599688;
-                color:white;
-                size:2%;
-            }
-            .baixo{
-                transform: translateY(-70px);
-                transition: transform 1s;
-            }
-            .normal{
-                transform: translateY(0);
-                transition: transform 0.5s;
-                
-            }
-            /*@media(min-width:400px, max-width:600px) {
-                #menu{
-                width: 100%;
-                padding: 0.5%;
-                background-color:#49D6B5;
-                position: fixed;
-                gap:1%;
-                display:flex;
-                justify-content:space-around;
-                text-align:center;
-                margin:auto;
-                }
-            }*/
-        </style>
+        <link rel="stylesheet" href="styles/stylerafa1.css">
+        <link rel="stylesheet" href="styles/animations.css">
+        
     </head>
     <body>
+        
         <script src="scripts.js"></script>
+        <br>
         <h1>Rafael</h1>
         <div class="container1">
             
@@ -117,7 +245,7 @@
                 <h4>Links para facilitar a navegação:</h4>
                 <nav>
                     <a href="#jogos">Jogos</a>
-                    <a href="#livros">Livros</a>
+                    <a href="#livro">Livros</a>
                     <a href="#proj">Outros Projetos</a>
                 </nav> 
             </div>
@@ -125,12 +253,12 @@
         </div>
         
         <div class="container">
-            <div id="jogos" class="titulo">
+            <div id="jogos">
                 <h3>Jogos</h3>
                 <p>Abaixo você verá meus jogos que eu já fiz, estou fazendo ou pretendo fazer</p>
             </div>
             
-            <div class="cont">
+            <div class="contjogo">
                     <h4>Last Hope</h4>
                     <p>O jogo Last Hope segue a história de Gabriela, uma garota que deseja trazer paz ao reino após um cavaleiro sombrio retornar de seu selo.</p>
                     <div>
@@ -158,7 +286,7 @@
                 </div>
             </div>
 
-            <div class="cont">
+            <div class="contjogo">
                 <div>
                     <h4>Geometry Dodge</h4>
                     <p>Um jogo simples feito no scratch onde seu objetivo é apenas desviar de vários projéteis</p>
@@ -181,26 +309,18 @@
                     </p>
                 </div>
                 <div>
-                    <a href="#">Jogar</a>
-                </div>
-            </div>
-
-
-            <div class="cont">
-                <div>
-                    <div></div>
-                    <div></div>
+                    <a href="https://scratch.mit.edu/projects/1365563882/">Jogar</a>
                 </div>
             </div>
 		</div>
 
 		<div class="container">
-			<div id="livros" class="titulo">
+			<div id="livros">
                 <h3>Livros</h3>
                 <p>Abaixo você verá meus livros ou histórias que estou escrevendo ou planejo fazer isso futuramente</p>
             </div>
 
-            <div class="cont">
+            <div class="contlivro">
                 <div>
                     <h4>Elemental Hunters</h4>
                     <p>Uma futura série de livros que pretendo escrever e postar. No momento, o primeiro livro está sendo reescrito e eu, junto de minha equipe, irei tentar lança-lo até o final de 2026</p>
