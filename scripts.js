@@ -51,3 +51,18 @@ setInterval(()=>{
     proximo();
 
 },10000);
+
+const links = document.querySelectorAll("a.link");
+
+links.forEach(link => {
+    
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 2000);
+    });
+});
