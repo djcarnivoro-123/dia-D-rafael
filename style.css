@@ -1,12 +1,28 @@
+
+/*CONTEINERS*/
+
 .container{
     background-color: white;
     border: solid 1px;
     border-radius: 1%;
     display: flex;
-    min-height: 600px;
     justify-content: center;
     width: 80%;
-    margin:auto;
+    margin:10%;
+    text-align: center;
+    padding: 20px;
+}
+.container1{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin:5% 12.5% 0 12.5%;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
 }
 body{
     font-family: Arial;
