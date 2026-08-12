@@ -8,18 +8,18 @@
     display: flex;
     justify-content: center;
     width: 80%;
-    margin:10%;
+    margin: 5% auto;
     text-align: center;
     padding: 20px;
 }
 .container1{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border: solid 1px;
     border-radius: 1%;
     display: flex;
     justify-content: center;
     width: 75%;
-    margin:5% 12.5% 0 12.5%;
+    margin:2% auto;
     text-align: center;
     padding: 20px;
     flex-direction: column;
@@ -27,4 +27,23 @@
 body{
     font-family: Arial;
     background-color: grey;
+}
+
+/*Seletores*/
+
+#julia{
+    /*background-image: radial-gradient(green, grey, gray);*/
+    background-image: linear-gradient(to bottom, gray, aquamarine, mediumorchid, gray);
+    margin: 5% 0 5% 0;
+}
+#rafael{
+    /*background-image: radial-gradient(green, grey, gray);*/
+    background-image: linear-gradient(to bottom, gray, limegreen, limegreen, gray);
+    margin: 5% 0 5% 0;
+    color:;
+}
+#kayllan{
+    /*background-image: radial-gradient(green, grey, gray);*/
+    background-image: linear-gradient(to bottom, gray, lime, gray);
+    margin: 5% 0 5% 0;
 }
