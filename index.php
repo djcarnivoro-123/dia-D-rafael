@@ -222,8 +222,8 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="animations.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/animations.css">
     </head>
     <body>
         
@@ -241,9 +241,7 @@
         </section>
 
         <section id="sobre">
-            <div class="container">
-                <h2>Sobre Nós</h2>
-            </div>
+            <h2>Sobre Nós</h2>
 
             <section id="julia">
                 <div class="container1">
@@ -261,14 +259,23 @@
                         Olá, eu sou Rafael e no momento sou um aluno do segundo ano. Gosto de jogos antigos e histórias de fantasias(Não é atoa que eu estou escrevendo uma).<br>
                         Sobre minhas criações, abaixo vocês encontrarão um link para uma página onde estão grande parte delas.
                     </p>
-                    <a href="rafael.html" class="link">Click Aqui</a>
+                    <a href="rafael.html" class="link">Clique Aqui</a>
                 </div>
                 
                 <div class="container1">
                     <p>Entre todas as minhas criações, as melhores e mais desenvolvidas são:</p>
-                    <div>
-                        
-                        <h4>Elemental Hunters</h4>
+                    <div class="cont">
+                        <div>
+                            <h4>Elemental Hunters</h4> 
+                            <img src="imagens/elementalhunters (1).png">
+                            <p></p>
+                        </div>
+                        <div>
+                            <h4>Last Hope</h4>
+                            <img src="imagens/Idle.png">
+                            <p></p> 
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -277,8 +284,19 @@
                     <h3>Kayllan</h3>
                     <p>
                         Olá, eu sou Kayllan e no momento sou um aluno do segundo ano. Gosto de jogos antigos e histórias de fantasias(Não é atoa que eu estou escrevendo uma, mas não está completa. só tem 3 Capitulos).<br>
-                        Sobre minhas criações, abaixo vocês encontrarão um link para uma página onde estão grande parte delas.
                     </p>
+                </div>
+                <div class="container1">
+                    <p>Entre todas as minhas criações, as melhores e mais desenvolvidas:</p>
+                    <div>
+                        <h4>THE THREE PILLARS</h4>
+                        <p>Em THE THREE PILLARS, a humanidade acreditava estar vivendo em um mundo comum até que criaturas misteriosas começam a surgir de todos os lugares, espalhando destruição e colocando o planeta à beira do colapso. Em meio ao caos, o arqueólogo japonês Koru Tenji encontra um antigo templo escondido nas profundezas de uma caverna e é obrigado a enfrentar desafios criados por Foltun, uma entidade que guarda um poder desconhecido. Para sobreviver, Koru precisa usar sua inteligência, suas memórias e o misterioso Espectro Cerebral, enquanto enfrenta os lendários guardiões de Cisbom. Ao superar o templo, Koru recebe uma energia extraordinária e se torna responsável por mudar o destino da humanidade, criando uma nova era na qual pessoas passam a despertar poderes e lutar contra as criaturas. Anos depois, enquanto os humanos começam a explorar o espaço em busca de respostas, o cientista brasileiro Victor Samuel participa de uma expedição até Netuno e encontra algo que pode revelar uma parte da verdadeira origem desses poderes e dos fenômenos que estão acontecendo no universo. Conforme novos protagonistas surgem, a história se expande para diferentes lugares, épocas e dimensões, revelando que os acontecimentos que pareciam separados estão conectados por um mistério muito maior. Entre heróis, monstros, entidades, poderes e segredos cósmicos, a humanidade terá que descobrir a verdade por trás dos três pilares antes que seja tarde demais.
+                        </p>
+                    </div>
+                    <div>
+                        <h4></h4>
+                        <p></p>
+                    </div>
                 </div>
             </section>
         </section>
