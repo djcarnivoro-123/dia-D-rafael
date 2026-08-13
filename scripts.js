@@ -1,17 +1,17 @@
 let contador = 1;
 
 
-function proximo(){
-    const img = document.getElementById("imag");
+function proximo(text, num, classe){
+    const img = document.getElementById(classe);
 
     contador++;
-    if(contador > 7){
+    if(contador > num){
         contador = 1;
     }
     
     img.classList.add("imgfadeo");
     setInterval(()=>{
-        img.src = "imagens/lasthope ("+ contador + ").png";
+        img.src = text+ contador + ").png";
         img.classList.remove("imgfadeo");
     },100);
     
@@ -23,18 +23,18 @@ function proximo(){
 };
 
 
-function anterior(){
-    const img = document.getElementById("imag");
+function anterior(text, num, classe){
+    const img = document.getElementById(classe);
 
     contador--;
 
     if(contador < 2){
-        contador = 7;
+        contador = num;
     }
 
     img.classList.add("imgfadeo");
     setInterval(()=>{
-        img.src = "imagens/lasthope ("+ contador + ").png";
+        img.src = text+ contador + ").png";
         img.classList.remove("imgfadeo");
     },100);
     
@@ -46,11 +46,11 @@ function anterior(){
 };
 
 
-setInterval(()=>{
+//setInterval(()=>{
 
-    proximo();
+    //proximo();
 
-},10000);
+//},10000);
 
 const links = document.querySelectorAll("a.link");
 
