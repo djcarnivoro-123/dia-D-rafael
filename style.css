@@ -1,49 +1,291 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
-/*CONTEINERS*/
+* {
+    box-sizing: border-box;
+}
 
-.container{
-    background-color: white;
-    border: solid 1px;
-    border-radius: 1%;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 5% auto;
-    text-align: center;
-    padding: 20px;
+html {
+    scroll-behavior: smooth;
 }
-.container1{
-    background-color: rgba(255, 255, 255, 0.9);
-    border: solid 1px;
-    border-radius: 1%;
-    display: flex;
-    justify-content: center;
-    width: 75%;
-    margin:2% auto;
-    text-align: center;
-    padding: 20px;
-    flex-direction: column;
-}
-body{
-    font-family: Arial;
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
     background-color: grey;
+
+    font-size: 20px;
+    line-height: 1.6;
 }
 
-/*Seletores*/
 
-#julia{
-    /*background-image: radial-gradient(green, grey, gray);*/
-    background-image: linear-gradient(to bottom, gray, aquamarine, mediumorchid, gray);
-    margin: 5% 0 5% 0;
+/* =========================
+   TÍTULOS
+========================= */
+
+h1 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 10px 0 25px;
 }
-#rafael{
-    /*background-image: radial-gradient(green, grey, gray);*/
-    background-image: linear-gradient(to bottom, gray, limegreen, limegreen, gray);
-    margin: 5% 0 5% 0;
-    color:;
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin: 10px 0 20px;
+    text-align: center;
 }
-#kayllan{
-    /*background-image: radial-gradient(green, grey, gray);*/
-    background-image: linear-gradient(to bottom, gray, lime, gray);
-    margin: 5% 0 5% 0;
+
+h3 {
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    margin: 10px 0 15px;
+}
+
+p {
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.container {
+    background-color: white;
+
+    border: 2px solid #333;
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: min(90%, 1400px);
+
+    min-height: 450px;
+
+    margin: 100px auto;
+
+    text-align: center;
+
+    padding: 50px;
+
+    gap: 35px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   CONTAINERS SECUNDÁRIO
+========================= */
+
+.container1 {
+    background-color: rgba(255, 255, 255, 0.95);
+
+    border: 2px solid #333;
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: min(88%, 1200px);
+
+    min-height: 350px;
+
+    margin: 80px auto;
+
+    text-align: center;
+
+    padding: 45px;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+#julia {
+    background-image:
+        linear-gradient(
+            to bottom,
+            gray,
+            aquamarine,
+            mediumorchid,
+            gray
+        );
+
+    padding: 70px 0;
+}
+
+
+#rafael {
+    background-image:
+        linear-gradient(
+            to bottom,
+            gray,
+            limegreen,
+            limegreen,
+            gray
+        );
+
+    padding: 70px 0;
+}
+
+
+#kayllan {
+    background-image:
+        linear-gradient(
+            to bottom,
+            gray,
+            red,
+            gray
+        );
+
+    padding: 70px 0;
+}
+
+
+/* =========================
+   COISAS RAFAEL
+========================= */
+
+.cont{
+    display: flex;
+    justify-content:space-around;
+}
+
+img{
+    width: 75%;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 36px;
+    }
+
+
+    .container {
+        width: 92%;
+
+        min-height: 400px;
+
+        margin: 45px auto;
+
+        padding: 40px 30px;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .container1 {
+        width: 90%;
+
+        min-height: 300px;
+
+        margin: 35px auto;
+
+        padding: 35px 25px;
+    }
+
+
+    #julia,
+    #rafael,
+    #kayllan {
+        padding: 55px 0;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 420px) {
+
+    body {
+        font-size: 18px;
+        transform: scale(2);
+    }
+
+
+    .container {
+        width: 94%;
+
+        min-height: 350px;
+
+        margin: 50px auto;
+
+        padding: 80px 50px;
+
+        border-radius: 15px;
+
+        gap: 20px;
+    }
+
+
+    .container1 {
+        width: 94%;
+
+        min-height: 280px;
+
+        margin: 35px auto;
+
+        padding: 30px 20px;
+
+        border-radius: 15px;
+
+        gap: 18px;
+    }
+
+
+    #julia,
+    #rafael,
+    #kayllan {
+        padding: 40px 0;
+    }
+
+    /*titulos*/
+
+    h1 {
+        font-size: clamp(26.4rem, 60vw, 48rem);
+        margin: 10px 0 25px;
+    }
+    
+    h2 {
+        font-size: clamp(21.6rem, 48vw, 36rem);
+        margin: 10px 0 20px;
+    }
+    
+    h3 {
+        font-size: clamp(8.4rem, 18vw, 13.2rem);
+        margin: 10px 0 15px;
+    }
+    
+    p {
+        font-size: clamp(26.4rem, 48vw, 36rem);
+        line-height: 1.7;
+        transform: scale(1.5);
+    }
+    
 }
